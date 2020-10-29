@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185B3D8F254A96EF00CF1164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3D8E254A96EF00CF1164 /* AppDelegate.swift */; };
+		185B3D91254A96EF00CF1164 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3D90254A96EF00CF1164 /* SceneDelegate.swift */; };
+		185B3D93254A96EF00CF1164 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3D92254A96EF00CF1164 /* ViewController.swift */; };
+		185B3D96254A96EF00CF1164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185B3D94254A96EF00CF1164 /* Main.storyboard */; };
+		185B3D98254A96F000CF1164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B3D97254A96F000CF1164 /* Assets.xcassets */; };
+		185B3D9B254A96F000CF1164 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185B3D99254A96F000CF1164 /* LaunchScreen.storyboard */; };
+		185B3DA6254A96F000CF1164 /* HoseoGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DA5254A96F000CF1164 /* HoseoGuardTests.swift */; };
+		185B3DB1254A96F000CF1164 /* HoseoGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DB0254A96F000CF1164 /* HoseoGuardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185B3DA2254A96F000CF1164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185B3D83254A96EF00CF1164 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185B3D8A254A96EF00CF1164;
+			remoteInfo = HoseoGuard;
+		};
+		185B3DAD254A96F000CF1164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185B3D83254A96EF00CF1164 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185B3D8A254A96EF00CF1164;
+			remoteInfo = HoseoGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		185B3D8B254A96EF00CF1164 /* HoseoGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoseoGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185B3D8E254A96EF00CF1164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		185B3D90254A96EF00CF1164 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		185B3D92254A96EF00CF1164 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		185B3D95254A96EF00CF1164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		185B3D97254A96F000CF1164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185B3D9A254A96F000CF1164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185B3D9C254A96F000CF1164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185B3DA1254A96F000CF1164 /* HoseoGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoseoGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185B3DA5254A96F000CF1164 /* HoseoGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoseoGuardTests.swift; sourceTree = "<group>"; };
+		185B3DA7254A96F000CF1164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185B3DAC254A96F000CF1164 /* HoseoGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoseoGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185B3DB0254A96F000CF1164 /* HoseoGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoseoGuardUITests.swift; sourceTree = "<group>"; };
+		185B3DB2254A96F000CF1164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185B3D88254A96EF00CF1164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185B3D9E254A96F000CF1164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185B3DA9254A96F000CF1164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185B3D82254A96EF00CF1164 = {
+			isa = PBXGroup;
+			children = (
+				185B3D8D254A96EF00CF1164 /* HoseoGuard */,
+				185B3DA4254A96F000CF1164 /* HoseoGuardTests */,
+				185B3DAF254A96F000CF1164 /* HoseoGuardUITests */,
+				185B3D8C254A96EF00CF1164 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		185B3D8C254A96EF00CF1164 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185B3D8B254A96EF00CF1164 /* HoseoGuard.app */,
+				185B3DA1254A96F000CF1164 /* HoseoGuardTests.xctest */,
+				185B3DAC254A96F000CF1164 /* HoseoGuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185B3D8D254A96EF00CF1164 /* HoseoGuard */ = {
+			isa = PBXGroup;
+			children = (
+				185B3D8E254A96EF00CF1164 /* AppDelegate.swift */,
+				185B3D90254A96EF00CF1164 /* SceneDelegate.swift */,
+				185B3D92254A96EF00CF1164 /* ViewController.swift */,
+				185B3D94254A96EF00CF1164 /* Main.storyboard */,
+				185B3D97254A96F000CF1164 /* Assets.xcassets */,
+				185B3D99254A96F000CF1164 /* LaunchScreen.storyboard */,
+				185B3D9C254A96F000CF1164 /* Info.plist */,
+			);
+			path = HoseoGuard;
+			sourceTree = "<group>";
+		};
+		185B3DA4254A96F000CF1164 /* HoseoGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				185B3DA5254A96F000CF1164 /* HoseoGuardTests.swift */,
+				185B3DA7254A96F000CF1164 /* Info.plist */,
+			);
+			path = HoseoGuardTests;
+			sourceTree = "<group>";
+		};
+		185B3DAF254A96F000CF1164 /* HoseoGuardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				185B3DB0254A96F000CF1164 /* HoseoGuardUITests.swift */,
+				185B3DB2254A96F000CF1164 /* Info.plist */,
+			);
+			path = HoseoGuardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185B3D8A254A96EF00CF1164 /* HoseoGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185B3DB5254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuard" */;
+			buildPhases = (
+				185B3D87254A96EF00CF1164 /* Sources */,
+				185B3D88254A96EF00CF1164 /* Frameworks */,
+				185B3D89254A96EF00CF1164 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoseoGuard;
+			productName = HoseoGuard;
+			productReference = 185B3D8B254A96EF00CF1164 /* HoseoGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		185B3DA0254A96F000CF1164 /* HoseoGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185B3DB8254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuardTests" */;
+			buildPhases = (
+				185B3D9D254A96F000CF1164 /* Sources */,
+				185B3D9E254A96F000CF1164 /* Frameworks */,
+				185B3D9F254A96F000CF1164 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185B3DA3254A96F000CF1164 /* PBXTargetDependency */,
+			);
+			name = HoseoGuardTests;
+			productName = HoseoGuardTests;
+			productReference = 185B3DA1254A96F000CF1164 /* HoseoGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		185B3DAB254A96F000CF1164 /* HoseoGuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185B3DBB254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuardUITests" */;
+			buildPhases = (
+				185B3DA8254A96F000CF1164 /* Sources */,
+				185B3DA9254A96F000CF1164 /* Frameworks */,
+				185B3DAA254A96F000CF1164 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185B3DAE254A96F000CF1164 /* PBXTargetDependency */,
+			);
+			name = HoseoGuardUITests;
+			productName = HoseoGuardUITests;
+			productReference = 185B3DAC254A96F000CF1164 /* HoseoGuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185B3D83254A96EF00CF1164 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					185B3D8A254A96EF00CF1164 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					185B3DA0254A96F000CF1164 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 185B3D8A254A96EF00CF1164;
+					};
+					185B3DAB254A96F000CF1164 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 185B3D8A254A96EF00CF1164;
+					};
+				};
+			};
+			buildConfigurationList = 185B3D86254A96EF00CF1164 /* Build configuration list for PBXProject "HoseoGuard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185B3D82254A96EF00CF1164;
+			productRefGroup = 185B3D8C254A96EF00CF1164 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185B3D8A254A96EF00CF1164 /* HoseoGuard */,
+				185B3DA0254A96F000CF1164 /* HoseoGuardTests */,
+				185B3DAB254A96F000CF1164 /* HoseoGuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185B3D89254A96EF00CF1164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185B3D9B254A96F000CF1164 /* LaunchScreen.storyboard in Resources */,
+				185B3D98254A96F000CF1164 /* Assets.xcassets in Resources */,
+				185B3D96254A96EF00CF1164 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185B3D9F254A96F000CF1164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185B3DAA254A96F000CF1164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185B3D87254A96EF00CF1164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185B3D93254A96EF00CF1164 /* ViewController.swift in Sources */,
+				185B3D8F254A96EF00CF1164 /* AppDelegate.swift in Sources */,
+				185B3D91254A96EF00CF1164 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185B3D9D254A96F000CF1164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185B3DA6254A96F000CF1164 /* HoseoGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185B3DA8254A96F000CF1164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185B3DB1254A96F000CF1164 /* HoseoGuardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185B3DA3254A96F000CF1164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185B3D8A254A96EF00CF1164 /* HoseoGuard */;
+			targetProxy = 185B3DA2254A96F000CF1164 /* PBXContainerItemProxy */;
+		};
+		185B3DAE254A96F000CF1164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185B3D8A254A96EF00CF1164 /* HoseoGuard */;
+			targetProxy = 185B3DAD254A96F000CF1164 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		185B3D94254A96EF00CF1164 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185B3D95254A96EF00CF1164 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		185B3D99254A96F000CF1164 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185B3D9A254A96F000CF1164 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		185B3DB3254A96F000CF1164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		185B3DB4254A96F000CF1164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185B3DB6254A96F000CF1164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2H46459ME;
+				INFOPLIST_FILE = HoseoGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		185B3DB7254A96F000CF1164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2H46459ME;
+				INFOPLIST_FILE = HoseoGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		185B3DB9254A96F000CF1164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2H46459ME;
+				INFOPLIST_FILE = HoseoGuardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoseoGuard.app/HoseoGuard";
+			};
+			name = Debug;
+		};
+		185B3DBA254A96F000CF1164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2H46459ME;
+				INFOPLIST_FILE = HoseoGuardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoseoGuard.app/HoseoGuard";
+			};
+			name = Release;
+		};
+		185B3DBC254A96F000CF1164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2H46459ME;
+				INFOPLIST_FILE = HoseoGuardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoseoGuard;
+			};
+			name = Debug;
+		};
+		185B3DBD254A96F000CF1164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2H46459ME;
+				INFOPLIST_FILE = HoseoGuardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoseoGuard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185B3D86254A96EF00CF1164 /* Build configuration list for PBXProject "HoseoGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185B3DB3254A96F000CF1164 /* Debug */,
+				185B3DB4254A96F000CF1164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185B3DB5254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185B3DB6254A96F000CF1164 /* Debug */,
+				185B3DB7254A96F000CF1164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185B3DB8254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185B3DB9254A96F000CF1164 /* Debug */,
+				185B3DBA254A96F000CF1164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185B3DBB254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185B3DBC254A96F000CF1164 /* Debug */,
+				185B3DBD254A96F000CF1164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185B3D83254A96EF00CF1164 /* Project object */;
+}
