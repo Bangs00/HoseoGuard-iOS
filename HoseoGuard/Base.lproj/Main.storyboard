@@ -522,7 +522,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="touchLogoutButton:" destination="4F9-hs-DqI" eventType="touchUpInside" id="R5M-2E-LML"/>
+                                            <action selector="touchLogoutButton:" destination="4F9-hs-DqI" eventType="touchUpInside" id="nrb-Qe-S6s"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -545,7 +545,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-ug-tuf" userLabel="Invisible Button">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="601.33333333333337"/>
                                 <connections>
-                                    <action selector="touchInvisibleButton:" destination="4F9-hs-DqI" eventType="touchUpInside" id="tRR-lU-upT"/>
+                                    <action selector="touchInvisibleButton:" destination="4F9-hs-DqI" eventType="touchUpInside" id="lEZ-eW-Ded"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -561,8 +561,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="hoseoGuardLabel" destination="L2z-Tq-4lr" id="ElS-Vr-4Pk"/>
-                        <outlet property="menuView" destination="J5X-l0-hge" id="ldH-SG-1p9"/>
+                        <outlet property="hoseoGuardLabel" destination="L2z-Tq-4lr" id="51U-RL-vfp"/>
+                        <outlet property="menuView" destination="J5X-l0-hge" id="Sla-ER-1d5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIU-tY-9Df" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
