@@ -12,14 +12,33 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-//    let serverURL = "http://192.168.0.40:3001"
+    //    let serverURL = "http://192.168.0.40:3001"
     let serverURL = "http://210.119.104.160:3001"
     //MARK: -viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         setLayout()
+        self.idTextField.delegate = self
+        self.pwTextField.delegate = self
+    }
+    //MARK: -그라데이션
+    let gradientLayer : CAGradientLayer = {
+        let layer = CAGradientLayer()
+        let color1 = UIColor(rgb: 0xFFC371)
+        let color2 = UIColor(rgb: 0xFF5F6D)
+        layer.colors = [color1.cgColor, color2.cgColor]
+        layer.startPoint = CGPoint(x: 0, y: 0)
+        layer.endPoint = CGPoint(x: 1, y: 1)
+        return layer
+    }()
+    //MARK: -viewDidLayoutSubviews
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.view.layer.insertSublayer(self.gradientLayer, at: 0)
+        self.gradientLayer.frame = view.bounds
     }
     //MARK: -setLayout
     func setLayout() {
@@ -36,18 +55,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         pwTextField.layer.borderWidth = 1
         
         loginButton.layer.cornerRadius = loginButton.frame.height / 2
+        
+        loginButton.layer.shadowColor = UIColor.black.cgColor
+        loginButton.layer.shadowOffset = .zero
+        loginButton.layer.shadowRadius = 3
+        loginButton.layer.shadowOpacity = 0.5
     }
     
-
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     //MARK: -doLogin
     func doLogin() {
         DispatchQueue.main.async{ LoadingHUD.show() }
@@ -148,6 +171,38 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         task.resume()
     }
+    //MARK: -textFieldShouldReturn
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.isEqual(self.idTextField)){
+            self.pwTextField.becomeFirstResponder()
+        }
+        else if (textField.isEqual(self.pwTextField)){
+            self.view.endEditing(true)
+            
+            //아이디와 비밀번호가 비어있을 경우
+            if (idTextField.text == "" && pwTextField.text == "") {
+                let alert = UIAlertController(title: "아이디와 비밀번호를 입력해주세요.", message: nil, preferredStyle: .alert)
+                self.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {alert.dismiss(animated: true, completion: nil)})
+            }
+            //비밀번호 비어있을 경우
+            else if (pwTextField.text == "") {
+                let alert = UIAlertController(title: "비밀번호를 입력해주세요.", message: nil, preferredStyle: .alert)
+                self.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {alert.dismiss(animated: true, completion: nil)})
+            }
+            //학번 비어있을 경우
+            else if (idTextField.text == ""){
+                let alert = UIAlertController(title: "아이디를 입력해주세요.", message: nil, preferredStyle: .alert)
+                self.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {alert.dismiss(animated: true, completion: nil)})
+            }
+            else {
+                doLogin()
+            }
+        }
+        return true
+    }
     //MARK: -외부 터치시 키보드 숨김 함수
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -163,14 +218,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {alert.dismiss(animated: true, completion: nil)})
                 return false
             }
-                //비밀번호 비어있을 경우
+            //비밀번호 비어있을 경우
             else if (pwTextField.text == "") {
                 let alert = UIAlertController(title: "비밀번호를 입력해주세요.", message: nil, preferredStyle: .alert)
                 self.present(alert, animated: true, completion: nil)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {alert.dismiss(animated: true, completion: nil)})
                 return false
             }
-                //학번 비어있을 경우
+            //학번 비어있을 경우
             else if (idTextField.text == ""){
                 let alert = UIAlertController(title: "아이디를 입력해주세요.", message: nil, preferredStyle: .alert)
                 self.present(alert, animated: true, completion: nil)
@@ -185,4 +240,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         //segue identifier != LoginToHome일 경우
         return true
     }
+}
+//MARK: -ExtensionUIColor
+extension UIColor {
+   convenience init(red: Int, green: Int, blue: Int) {
+       assert(red >= 0 && red <= 255, "Invalid red component")
+       assert(green >= 0 && green <= 255, "Invalid green component")
+       assert(blue >= 0 && blue <= 255, "Invalid blue component")
+
+       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+   }
+
+   convenience init(rgb: Int) {
+       self.init(
+           red: (rgb >> 16) & 0xFF,
+           green: (rgb >> 8) & 0xFF,
+           blue: rgb & 0xFF
+       )
+   }
 }

@@ -14,16 +14,38 @@ class HomeViewController: UIViewController, CustomTableCellDellegate {
     @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var equipmentTableView: UITableView!
     @IBOutlet weak var mapImageView: UIImageView!
-//    let serverURL = "http://192.168.0.40:3001"
+    @IBOutlet weak var equipInfoStackView: UIStackView!
+    //    let serverURL = "http://192.168.0.40:3001"
     let serverURL = "http://210.119.104.160:3001"
     var equipLists : Array<Any> = []
     var equipAllLists : Array<Any> = []
     var map = -1
+    //MARK: -그라데이션
+    let gradientLayer : CAGradientLayer = {
+        let layer = CAGradientLayer()
+        let color1 = UIColor(rgb: 0xFFC371)
+        let color2 = UIColor(rgb: 0xFF5F6D)
+        layer.colors = [color1.cgColor, color2.cgColor]
+        layer.startPoint = CGPoint(x: 0, y: 0)
+        layer.endPoint = CGPoint(x: 1, y: 1)
+        return layer
+    }()
+    //MARK: -viewDidLayoutSubviews
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.view.layer.insertSublayer(self.gradientLayer, at: 0)
+        self.gradientLayer.frame = view.bounds
+    }
     // MARK: - setLayout
     func setLayout() {
         QRScanButton.layer.cornerRadius = QRScanButton.frame.height / 2
         MenuButton.layer.cornerRadius = MenuButton.frame.width / 2
         mapButton.layer.cornerRadius = mapButton.frame.height / 2
+        equipmentTableView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        equipmentTableView.layer.cornerRadius = 10
+        equipInfoStackView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        equipInfoStackView.layer.cornerRadius = 10
         
         QRScanButton.layer.shadowColor = UIColor.black.cgColor
         QRScanButton.layer.shadowOffset = .zero

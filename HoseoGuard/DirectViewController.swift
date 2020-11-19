@@ -19,6 +19,24 @@ class DirectViewController: UIViewController {
     var checkLists : Array<Any> = []
     var checkList : String = ""
     var checkCount : Int! = 0
+    //MARK: -그라데이션
+    let gradientLayer : CAGradientLayer = {
+        let layer = CAGradientLayer()
+        let color1 = UIColor(rgb: 0xFFC371)
+        let color2 = UIColor(rgb: 0xFF5F6D)
+        layer.colors = [color1.cgColor, color2.cgColor]
+        layer.startPoint = CGPoint(x: 0, y: 0)
+        layer.endPoint = CGPoint(x: 1, y: 1)
+        layer.cornerRadius = 25.0
+        return layer
+    }()
+    //MARK: -viewDidLayoutSubviews
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.layoutView.layer.insertSublayer(self.gradientLayer, at: 0)
+        self.gradientLayer.frame = layoutView.bounds
+    }
     //MARK: -viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()

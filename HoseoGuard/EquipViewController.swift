@@ -26,6 +26,23 @@ class EquipViewController: UIViewController {
 //    let serverURL = "http://192.168.0.40:3001"
     let serverURL = "http://210.119.104.160:3001"
     var urlData = ""
+    //MARK: -그라데이션
+    let gradientLayer : CAGradientLayer = {
+        let layer = CAGradientLayer()
+        let color1 = UIColor(rgb: 0xFFC371)
+        let color2 = UIColor(rgb: 0xFF5F6D)
+        layer.colors = [color1.cgColor, color2.cgColor]
+        layer.startPoint = CGPoint(x: 0, y: 0)
+        layer.endPoint = CGPoint(x: 1, y: 1)
+        return layer
+    }()
+    //MARK: -viewDidLayoutSubviews
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.view.layer.insertSublayer(self.gradientLayer, at: 0)
+        self.gradientLayer.frame = view.bounds
+    }
     //MARK: -viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
