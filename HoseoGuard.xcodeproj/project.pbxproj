@@ -9,12 +9,26 @@
 /* Begin PBXBuildFile section */
 		185B3D8F254A96EF00CF1164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3D8E254A96EF00CF1164 /* AppDelegate.swift */; };
 		185B3D91254A96EF00CF1164 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3D90254A96EF00CF1164 /* SceneDelegate.swift */; };
-		185B3D93254A96EF00CF1164 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3D92254A96EF00CF1164 /* ViewController.swift */; };
 		185B3D96254A96EF00CF1164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185B3D94254A96EF00CF1164 /* Main.storyboard */; };
 		185B3D98254A96F000CF1164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B3D97254A96F000CF1164 /* Assets.xcassets */; };
 		185B3D9B254A96F000CF1164 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185B3D99254A96F000CF1164 /* LaunchScreen.storyboard */; };
 		185B3DA6254A96F000CF1164 /* HoseoGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DA5254A96F000CF1164 /* HoseoGuardTests.swift */; };
 		185B3DB1254A96F000CF1164 /* HoseoGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DB0254A96F000CF1164 /* HoseoGuardUITests.swift */; };
+		185B3DE2254AA37E00CF1164 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DE1254AA37E00CF1164 /* LoginViewController.swift */; };
+		185B3DE7254AABEC00CF1164 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DE6254AABEC00CF1164 /* HomeViewController.swift */; };
+		185B3DEC254AB4BD00CF1164 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DEB254AB4BD00CF1164 /* QRScanViewController.swift */; };
+		185B3DF2254C089B00CF1164 /* QRScanVC.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B3DF1254C089B00CF1164 /* QRScanVC.xcassets */; };
+		185B3DF72552A41600CF1164 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B3DF62552A41600CF1164 /* MenuViewController.swift */; };
+		185B3DFC2552A4D100CF1164 /* HomeVC.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B3DFB2552A4D100CF1164 /* HomeVC.xcassets */; };
+		188BB0AC256124FA000117E2 /* EnrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BB0AB256124FA000117E2 /* EnrollViewController.swift */; };
+		188BB0B125640913000117E2 /* DirectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BB0B025640913000117E2 /* DirectViewController.swift */; };
+		188BB0B625640F12000117E2 /* EquipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BB0B525640F12000117E2 /* EquipViewController.swift */; };
+		188BB0BB25641317000117E2 /* EnrollVC.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188BB0BA25641317000117E2 /* EnrollVC.xcassets */; };
+		188BB0C02564F3ED000117E2 /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BB0BF2564F3ED000117E2 /* LoadingHUD.swift */; };
+		188BB0C525650303000117E2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BB0C425650303000117E2 /* LocationViewController.swift */; };
+		2FBD17C153EAE363DB825718 /* Pods_HoseoGuard_HoseoGuardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0A8388772A8ACEC19F8771 /* Pods_HoseoGuard_HoseoGuardUITests.framework */; };
+		782A1A2701D11936E449E52B /* Pods_HoseoGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B781B5DDB55CBB9979AE4422 /* Pods_HoseoGuard.framework */; };
+		F7F8F2056D154828FAC40BE8 /* Pods_HoseoGuardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7AC49E0DEE3E294596485F /* Pods_HoseoGuardTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016D9197B21C3CCD388E2E2B /* Pods-HoseoGuard-HoseoGuardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoseoGuard-HoseoGuardUITests.release.xcconfig"; path = "Target Support Files/Pods-HoseoGuard-HoseoGuardUITests/Pods-HoseoGuard-HoseoGuardUITests.release.xcconfig"; sourceTree = "<group>"; };
 		185B3D8B254A96EF00CF1164 /* HoseoGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoseoGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B3D8E254A96EF00CF1164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185B3D90254A96EF00CF1164 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		185B3D92254A96EF00CF1164 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		185B3D95254A96EF00CF1164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185B3D97254A96F000CF1164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185B3D9A254A96F000CF1164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,26 @@
 		185B3DAC254A96F000CF1164 /* HoseoGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoseoGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B3DB0254A96F000CF1164 /* HoseoGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoseoGuardUITests.swift; sourceTree = "<group>"; };
 		185B3DB2254A96F000CF1164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185B3DE1254AA37E00CF1164 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		185B3DE6254AABEC00CF1164 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		185B3DEB254AB4BD00CF1164 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		185B3DF1254C089B00CF1164 /* QRScanVC.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QRScanVC.xcassets; sourceTree = "<group>"; };
+		185B3DF62552A41600CF1164 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		185B3DFB2552A4D100CF1164 /* HomeVC.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeVC.xcassets; sourceTree = "<group>"; };
+		188BB0AB256124FA000117E2 /* EnrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollViewController.swift; sourceTree = "<group>"; };
+		188BB0B025640913000117E2 /* DirectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectViewController.swift; sourceTree = "<group>"; };
+		188BB0B525640F12000117E2 /* EquipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipViewController.swift; sourceTree = "<group>"; };
+		188BB0BA25641317000117E2 /* EnrollVC.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EnrollVC.xcassets; sourceTree = "<group>"; };
+		188BB0BF2564F3ED000117E2 /* LoadingHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHUD.swift; sourceTree = "<group>"; };
+		188BB0C425650303000117E2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		490D2E86F4A63DCB70CA9BDE /* Pods-HoseoGuard-HoseoGuardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoseoGuard-HoseoGuardUITests.debug.xcconfig"; path = "Target Support Files/Pods-HoseoGuard-HoseoGuardUITests/Pods-HoseoGuard-HoseoGuardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52A72B8D621EA1948393C65E /* Pods-HoseoGuard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoseoGuard.release.xcconfig"; path = "Target Support Files/Pods-HoseoGuard/Pods-HoseoGuard.release.xcconfig"; sourceTree = "<group>"; };
+		6766AB3F97502552A9E6C802 /* Pods-HoseoGuard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoseoGuard.debug.xcconfig"; path = "Target Support Files/Pods-HoseoGuard/Pods-HoseoGuard.debug.xcconfig"; sourceTree = "<group>"; };
+		7C0A8388772A8ACEC19F8771 /* Pods_HoseoGuard_HoseoGuardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoseoGuard_HoseoGuardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA8BD4F7C1050B4F42E03F7 /* Pods-HoseoGuardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoseoGuardTests.debug.xcconfig"; path = "Target Support Files/Pods-HoseoGuardTests/Pods-HoseoGuardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B781B5DDB55CBB9979AE4422 /* Pods_HoseoGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoseoGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF047861915D2157ECA30D1E /* Pods-HoseoGuardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoseoGuardTests.release.xcconfig"; path = "Target Support Files/Pods-HoseoGuardTests/Pods-HoseoGuardTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA7AC49E0DEE3E294596485F /* Pods_HoseoGuardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoseoGuardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782A1A2701D11936E449E52B /* Pods_HoseoGuard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F8F2056D154828FAC40BE8 /* Pods_HoseoGuardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBD17C153EAE363DB825718 /* Pods_HoseoGuard_HoseoGuardUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +120,8 @@
 				185B3DA4254A96F000CF1164 /* HoseoGuardTests */,
 				185B3DAF254A96F000CF1164 /* HoseoGuardUITests */,
 				185B3D8C254A96EF00CF1164 /* Products */,
+				DF5CAF4D137F7B42FEF9BCEE /* Pods */,
+				705D578C567724A6C651E4AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +138,22 @@
 		185B3D8D254A96EF00CF1164 /* HoseoGuard */ = {
 			isa = PBXGroup;
 			children = (
+				185B3DF0254C088300CF1164 /* Assets */,
 				185B3D8E254A96EF00CF1164 /* AppDelegate.swift */,
 				185B3D90254A96EF00CF1164 /* SceneDelegate.swift */,
-				185B3D92254A96EF00CF1164 /* ViewController.swift */,
 				185B3D94254A96EF00CF1164 /* Main.storyboard */,
+				188BB0C425650303000117E2 /* LocationViewController.swift */,
+				188BB0B525640F12000117E2 /* EquipViewController.swift */,
+				188BB0B025640913000117E2 /* DirectViewController.swift */,
 				185B3D97254A96F000CF1164 /* Assets.xcassets */,
 				185B3D99254A96F000CF1164 /* LaunchScreen.storyboard */,
 				185B3D9C254A96F000CF1164 /* Info.plist */,
+				185B3DE1254AA37E00CF1164 /* LoginViewController.swift */,
+				185B3DE6254AABEC00CF1164 /* HomeViewController.swift */,
+				185B3DEB254AB4BD00CF1164 /* QRScanViewController.swift */,
+				185B3DF62552A41600CF1164 /* MenuViewController.swift */,
+				188BB0AB256124FA000117E2 /* EnrollViewController.swift */,
+				188BB0BF2564F3ED000117E2 /* LoadingHUD.swift */,
 			);
 			path = HoseoGuard;
 			sourceTree = "<group>";
@@ -128,6 +176,39 @@
 			path = HoseoGuardUITests;
 			sourceTree = "<group>";
 		};
+		185B3DF0254C088300CF1164 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				185B3DF1254C089B00CF1164 /* QRScanVC.xcassets */,
+				185B3DFB2552A4D100CF1164 /* HomeVC.xcassets */,
+				188BB0BA25641317000117E2 /* EnrollVC.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		705D578C567724A6C651E4AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B781B5DDB55CBB9979AE4422 /* Pods_HoseoGuard.framework */,
+				7C0A8388772A8ACEC19F8771 /* Pods_HoseoGuard_HoseoGuardUITests.framework */,
+				FA7AC49E0DEE3E294596485F /* Pods_HoseoGuardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF5CAF4D137F7B42FEF9BCEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6766AB3F97502552A9E6C802 /* Pods-HoseoGuard.debug.xcconfig */,
+				52A72B8D621EA1948393C65E /* Pods-HoseoGuard.release.xcconfig */,
+				490D2E86F4A63DCB70CA9BDE /* Pods-HoseoGuard-HoseoGuardUITests.debug.xcconfig */,
+				016D9197B21C3CCD388E2E2B /* Pods-HoseoGuard-HoseoGuardUITests.release.xcconfig */,
+				7EA8BD4F7C1050B4F42E03F7 /* Pods-HoseoGuardTests.debug.xcconfig */,
+				BF047861915D2157ECA30D1E /* Pods-HoseoGuardTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185B3DB5254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuard" */;
 			buildPhases = (
+				26286DE041CC99339704220B /* [CP] Check Pods Manifest.lock */,
 				185B3D87254A96EF00CF1164 /* Sources */,
 				185B3D88254A96EF00CF1164 /* Frameworks */,
 				185B3D89254A96EF00CF1164 /* Resources */,
@@ -152,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185B3DB8254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuardTests" */;
 			buildPhases = (
+				5A741A8AD7126B66E5E985C3 /* [CP] Check Pods Manifest.lock */,
 				185B3D9D254A96F000CF1164 /* Sources */,
 				185B3D9E254A96F000CF1164 /* Frameworks */,
 				185B3D9F254A96F000CF1164 /* Resources */,
@@ -170,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185B3DBB254A96F000CF1164 /* Build configuration list for PBXNativeTarget "HoseoGuardUITests" */;
 			buildPhases = (
+				51BE99B41F2AD436E5983D3E /* [CP] Check Pods Manifest.lock */,
 				185B3DA8254A96F000CF1164 /* Sources */,
 				185B3DA9254A96F000CF1164 /* Frameworks */,
 				185B3DAA254A96F000CF1164 /* Resources */,
@@ -231,8 +315,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188BB0BB25641317000117E2 /* EnrollVC.xcassets in Resources */,
 				185B3D9B254A96F000CF1164 /* LaunchScreen.storyboard in Resources */,
 				185B3D98254A96F000CF1164 /* Assets.xcassets in Resources */,
+				185B3DFC2552A4D100CF1164 /* HomeVC.xcassets in Resources */,
+				185B3DF2254C089B00CF1164 /* QRScanVC.xcassets in Resources */,
 				185B3D96254A96EF00CF1164 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +340,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26286DE041CC99339704220B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoseoGuard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51BE99B41F2AD436E5983D3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoseoGuard-HoseoGuardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A741A8AD7126B66E5E985C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoseoGuardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		185B3D87254A96EF00CF1164 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185B3D93254A96EF00CF1164 /* ViewController.swift in Sources */,
+				185B3DE2254AA37E00CF1164 /* LoginViewController.swift in Sources */,
+				185B3DF72552A41600CF1164 /* MenuViewController.swift in Sources */,
 				185B3D8F254A96EF00CF1164 /* AppDelegate.swift in Sources */,
 				185B3D91254A96EF00CF1164 /* SceneDelegate.swift in Sources */,
+				188BB0C02564F3ED000117E2 /* LoadingHUD.swift in Sources */,
+				188BB0C525650303000117E2 /* LocationViewController.swift in Sources */,
+				188BB0B625640F12000117E2 /* EquipViewController.swift in Sources */,
+				185B3DEC254AB4BD00CF1164 /* QRScanViewController.swift in Sources */,
+				188BB0AC256124FA000117E2 /* EnrollViewController.swift in Sources */,
+				185B3DE7254AABEC00CF1164 /* HomeViewController.swift in Sources */,
+				188BB0B125640913000117E2 /* DirectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -366,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -380,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -421,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,12 +599,14 @@
 		};
 		185B3DB6254A96F000CF1164 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6766AB3F97502552A9E6C802 /* Pods-HoseoGuard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2H46459ME;
 				INFOPLIST_FILE = HoseoGuard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,18 +614,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		185B3DB7254A96F000CF1164 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A72B8D621EA1948393C65E /* Pods-HoseoGuard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2H46459ME;
 				INFOPLIST_FILE = HoseoGuard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,12 +635,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoseoGuard.HoseoGuard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		185B3DB9254A96F000CF1164 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA8BD4F7C1050B4F42E03F7 /* Pods-HoseoGuardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +664,7 @@
 		};
 		185B3DBA254A96F000CF1164 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF047861915D2157ECA30D1E /* Pods-HoseoGuardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +687,7 @@
 		};
 		185B3DBC254A96F000CF1164 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490D2E86F4A63DCB70CA9BDE /* Pods-HoseoGuard-HoseoGuardUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +708,7 @@
 		};
 		185B3DBD254A96F000CF1164 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016D9197B21C3CCD388E2E2B /* Pods-HoseoGuard-HoseoGuardUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
