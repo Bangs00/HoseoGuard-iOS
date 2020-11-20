@@ -71,7 +71,8 @@ class LocationViewController: UIViewController {
     //MARK: -touchOkayButton
     @IBAction func touchOkayButton(_ sender: Any) {
         let HomeVC = self.presentingViewController as? HomeViewController
-        
+        print(self.map)
+        print(self.mapLists.count)
         if (self.map == -1) {
             HomeVC?.map = -1
             HomeVC?.mapImageView.image = #imageLiteral(resourceName: "LaunchScreenImage")
@@ -81,7 +82,7 @@ class LocationViewController: UIViewController {
                 HomeVC?.equipLists.append(equipT!)
             }
         }
-        else if (self.map < 3) {
+        else if (self.map < self.mapLists.count) {
             DispatchQueue.main.async { LoadingHUD.show() }
             guard let mapList = mapLists[self.map] as? NSDictionary else { return }
             let filename = mapList["name"] as! String
@@ -148,7 +149,6 @@ class LocationViewController: UIViewController {
             }
             
             do {
-                //MARK: -Station Data
                 let object = try JSONSerialization.jsonObject(with: data!, options: []) as? NSArray
                 guard let jsonObject = object else {
                     DispatchQueue.main.async { LoadingHUD.hide() }
@@ -177,6 +177,7 @@ class LocationViewController: UIViewController {
     }
     //MARK: -downloadImage
     func downloadImage(from url: URL) {
+        print(url)
         let HomeVC = self.presentingViewController as? HomeViewController
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
@@ -187,7 +188,7 @@ class LocationViewController: UIViewController {
                 UIGraphicsBeginImageContextWithOptions(image!.size, true, 0)
                 image!.draw(at: CGPoint(x: 0,y: 0))
                 let context = UIGraphicsGetCurrentContext()!
-                context.setLineWidth(5.0)
+                context.setLineWidth(7.5)
                 context.setStrokeColor(UIColor.red.cgColor)
                 
                 for equip in HomeVC!.equipAllLists {
@@ -197,7 +198,7 @@ class LocationViewController: UIViewController {
                         let ly = ((equipT?["location"] as? NSDictionary)!["y"] as? Int)!
                         print(lx)
                         print(ly)
-                        context.addEllipse(in: CGRect(x: CGFloat(lx) / 400 * ((HomeVC!.mapImageView.image?.size.width)!), y: CGFloat(ly) / 200 * ((HomeVC!.mapImageView.image?.size.height)!), width: 5, height: 5))
+                        context.addEllipse(in: CGRect(x: CGFloat(lx) / 400 * ((HomeVC!.mapImageView.image?.size.width)!), y: CGFloat(ly) / 200 * ((HomeVC!.mapImageView.image?.size.height)!), width: 7.5, height: 7.5))
                     }
                 }
                 

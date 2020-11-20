@@ -103,11 +103,11 @@ class HomeViewController: UIViewController, CustomTableCellDellegate {
         eVC?.location = equipList["boarding_location"] as? String
         eVC?.equipList = equipList
         eVC?.map = (equipList["map"] as? Int)!
-        if ((equipList["maxprs"] as? Int) == -1) {
+        if ((equipList["maxprs"] as? Double) == -1) {
             eVC?.check = "무"
         }
         else {
-            eVC?.check = String(Double((equipList["maxprs"] as? Int)!))
+            eVC?.check = String(Double((equipList["maxprs"] as? Double)!))
         }
         DispatchQueue.main.async { LoadingHUD.hide() }
         self.present(eVC!, animated: true, completion: nil)
@@ -220,7 +220,7 @@ class HomeViewController: UIViewController, CustomTableCellDellegate {
                     for j in 0..<maxPrss.count {
                         let maxPrs = maxPrss[j] as? Dictionary<String, Any>
                         if (equipList["id"] as! Int == maxPrs!["equip_id"] as! Int) {
-                            equipList["maxprs"] = maxPrs!["prs"] as? Int
+                            equipList["maxprs"] = maxPrs!["prs"] as? Double
                             self.equipAllLists[i] = equipList
                         }
                     }
@@ -273,12 +273,29 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.idLabel.text = String((equipList["id"] as? Int)!)
         cell.serialLabel.text = equipList["serial"] as? String
         cell.locationLabel.text = equipList["boarding_location"] as? String
-        if ((equipList["maxprs"] as? Int) == -1) {
+        
+        if ((equipList["maxprs"] as? Double) == -1) {
+            cell.idLabel.backgroundColor = UIColor.yellow
+            cell.serialLabel.backgroundColor = UIColor.yellow
+            cell.locationLabel.backgroundColor = UIColor.yellow
+            cell.checkLabel.backgroundColor = UIColor.yellow
             cell.checkLabel.text = "점검기록 없음"
         }
         else {
-            cell.checkLabel.text = String(Double((equipList["maxprs"] as? Int)!)) + "X(1/10)MPa"
+            cell.checkLabel.text = String(Double((equipList["maxprs"] as? Double)!)) + "X(1/10)MPa"
             
+            if ((equipList["maxprs"] as? Double)! < 8.0 || ((equipList["maxprs"] as? Double)!) > 14.0) {
+                cell.idLabel.backgroundColor = UIColor.red
+                cell.serialLabel.backgroundColor = UIColor.red
+                cell.locationLabel.backgroundColor = UIColor.red
+                cell.checkLabel.backgroundColor = UIColor.red
+            }
+            else {
+                cell.idLabel.backgroundColor = UIColor.white
+                cell.serialLabel.backgroundColor = UIColor.white
+                cell.locationLabel.backgroundColor = UIColor.white
+                cell.checkLabel.backgroundColor = UIColor.white
+            }
             let fontSize = UIFont.boldSystemFont(ofSize: 8)
 
             let attributedStr = NSMutableAttributedString(string: cell.checkLabel.text!)
@@ -287,6 +304,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.checkLabel.attributedText = attributedStr
         }
+        
+        cell.awakeFromNib()
         
         return cell
     }

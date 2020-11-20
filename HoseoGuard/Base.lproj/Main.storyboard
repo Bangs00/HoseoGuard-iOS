@@ -122,34 +122,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oyj-jw-FXN" userLabel="Map Image View">
-                                <rect key="frame" x="37.666666666666657" y="69" width="300" height="150"/>
+                                <rect key="frame" x="9.3333333333333428" y="69" width="356.33333333333326" height="178"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oyj-jw-FXN" secondAttribute="height" multiplier="2:1" id="Oc1-hH-WJO"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="R3N-1u-EPZ" userLabel="Equip Stack View">
-                                <rect key="frame" x="37.666666666666657" y="243.99999999999997" width="300" height="121.66666666666666"/>
+                                <rect key="frame" x="37.666666666666657" y="272" width="300" height="93.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xho-Gx-wCD" userLabel="ID Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="21.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzL-sw-K9b" userLabel="Serial Label">
-                                        <rect key="frame" x="0.0" y="31" width="300" height="28.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="24.333333333333314" width="300" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4t-Sg-Zjo" userLabel="Location Label">
-                                        <rect key="frame" x="0.0" y="62.333333333333314" width="300" height="28"/>
+                                        <rect key="frame" x="0.0" y="48.333333333333314" width="300" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27f-FM-WNO" userLabel="Check Label">
-                                        <rect key="frame" x="0.0" y="93.333333333333314" width="300" height="28.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="72.333333333333314" width="300" height="21.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -179,7 +179,7 @@
                         <viewLayoutGuide key="safeArea" id="hqB-0w-lla"/>
                         <color key="backgroundColor" red="0.93577879669999997" green="0.90537458660000003" blue="0.65878224370000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="oyj-jw-FXN" firstAttribute="width" secondItem="yhL-i7-RBN" secondAttribute="width" multiplier="0.8" id="0xB-0Q-wSW"/>
+                            <constraint firstItem="oyj-jw-FXN" firstAttribute="width" secondItem="yhL-i7-RBN" secondAttribute="width" multiplier="0.95" id="0xB-0Q-wSW"/>
                             <constraint firstItem="R3N-1u-EPZ" firstAttribute="width" secondItem="yhL-i7-RBN" secondAttribute="width" multiplier="0.8" id="5gi-n3-KNT"/>
                             <constraint firstItem="oyj-jw-FXN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hqB-0w-lla" secondAttribute="top" constant="25" id="Fwj-yz-II6"/>
                             <constraint firstItem="T4s-s2-Urf" firstAttribute="width" secondItem="yhL-i7-RBN" secondAttribute="width" multiplier="0.3" id="HUb-al-qg6"/>
@@ -196,12 +196,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ScreenShotButton" destination="T4s-s2-Urf" id="kVE-aX-CVI"/>
                         <outlet property="checkLabel" destination="27f-FM-WNO" id="B22-ak-YXB"/>
                         <outlet property="idLabel" destination="xho-Gx-wCD" id="GrI-jF-vsV"/>
                         <outlet property="locationLabel" destination="M4t-Sg-Zjo" id="I3s-vD-lxy"/>
                         <outlet property="mapImageView" destination="oyj-jw-FXN" id="kJ2-fX-eOw"/>
                         <outlet property="qrImageView" destination="Qhq-pG-h5g" id="UWN-zg-hBj"/>
+                        <outlet property="screenShotButton" destination="T4s-s2-Urf" id="bMV-Wy-9N7"/>
                         <outlet property="serialLabel" destination="QzL-sw-K9b" id="B3g-HR-faL"/>
                     </connections>
                 </viewController>

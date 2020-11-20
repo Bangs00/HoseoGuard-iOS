@@ -131,14 +131,14 @@ class EquipViewController: UIViewController {
                 UIGraphicsBeginImageContextWithOptions(image!.size, true, 0)
                 image!.draw(at: CGPoint(x: 0,y: 0))
                 let context = UIGraphicsGetCurrentContext()!
-                context.setLineWidth(5.0)
+                context.setLineWidth(10)
                 context.setStrokeColor(UIColor.red.cgColor)
                 
                 let lx = ((self?.equipList?["location"] as? NSDictionary)!["x"] as? Int)!
                 let ly = ((self?.equipList?["location"] as? NSDictionary)!["y"] as? Int)!
                 print(lx)
                 print(ly)
-                context.addEllipse(in: CGRect(x: CGFloat(lx) / 400 * ((self!.mapImageView.image?.size.width)!), y: CGFloat(ly) / 200 * ((self!.mapImageView.image?.size.height)!), width: 5, height: 5))
+                context.addEllipse(in: CGRect(x: CGFloat(lx) / 400 * ((self!.mapImageView.image?.size.width)!), y: CGFloat(ly) / 200 * ((self!.mapImageView.image?.size.height)!), width: 10, height: 10))
                 
                 context.strokePath()
                 let endImage = UIGraphicsGetImageFromCurrentImageContext()
